@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="backup.css">
+    <script src="https://kit.fontawesome.com/68e839339c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Joaquin<br>Fidel</span> from FEUA</h1>
+                <p>1st year Student</p>
+            </div>
+        </div>
+    </div>
+<!-- About -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="cat.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi I am Joaquin Enrico Miguel Fidel, currently studying at Far Eastern University of Alabang and a 1st year student of BSITWMA. I am currently learning the basics of coding like using cpp, html, css, and javascript.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('notes')">Notes</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <!-- tab contents -->
+
+                <div class="tab-contents active-tab" id="notes">
+                    <ul>
+                        <li><span>Age:</span><br>I'm 19 and will forever be 19.</li>
+                        <li><span>Status:</span><br>Stressing for the Exams</li>
+                        <li><span>Likes:</span><br>Siya lang pu YIEEEEE</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>UI/UX Design Training at FEUA</li>
+                        <li><span>2022 - Current</span><br>Training in Home Cooking</li>
+                        <li><span>2012 - Current</span><br>Pro Gaming</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Graduated from Lakewood School of Alabang inc.</li>
+                        <li><span>2021</span><br>Graduated from Lakewood School of Alabang inc.</li>
+                        <li><span>2017</span><br>Graduated from Soldier's Hills Elem. School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Skills -->
+<div class="skills" id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skill-list">
+            <div>
+                <i class="fa-solid fa-kitchen-set"></i>
+                <h2>Cooking</h2>
+                <p>I started to gain interest in cooking when I was forced to cook for my own meal. When I learned how to cook it made my life more easier since when I get hungry I can just whip myself a good dish.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I can't say that I can develop a perfect website but still to have a skill like this helps me a lot since a made myself a few projects.</p>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>Javascript</h2>
+                <p>Stil quite new to making javascript, but I've made a few website and projects that have basic js.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Works -->
+
+<div id="works">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="proj1.png">
+                <div class="layer">
+                    <h3>My 1st Portfolio</h3>
+                    <p>We were tasked to make our own web portfolio, and so this is the project I made.</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="proj2.png">
+                <div class="layer">
+                    <h3>Bootstrap</h3>
+                    <p>We made a school website that used a bit of bootstrap in it. It's my first interaction with bootstrap.</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="proj3.png">
+                <div class="layer">
+                    <h3>Pokemon Game</h3>
+                    <p>This were my latest project. I did not do this alone since this project was me and my friend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>Terms Of Service | Privacy and Policy | © 2023. All Rights Reserved</p>
+</div>
+
+
+
+
+
+
+
+<script src="portfolio.js"></script>
+</body>
+</html>
